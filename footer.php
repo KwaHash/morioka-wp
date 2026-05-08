@@ -13,6 +13,7 @@ $theme_uri = get_template_directory_uri();
 				<li class="footer__nav-item"><a href="<?php echo esc_url( home_url( '/about/' ) ); ?>" class="footer__nav-link">障害年金について</a></li>
 				<li class="footer__nav-item"><a href="<?php echo esc_url( home_url( '/support/' ) ); ?>" class="footer__nav-link">サポート内容</a></li>
 				<li class="footer__nav-item"><a href="<?php echo esc_url( home_url( '/charge/' ) ); ?>" class="footer__nav-link">料金・費用</a></li>
+				<li class="footer__nav-item"><a href="<?php echo esc_url( get_post_type_archive_link( 'column' ) ); ?>" class="footer__nav-link">コラム</a></li>
 				<li class="footer__nav-item"><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="footer__nav-link">お問い合わせ</a></li>
 			</ul>
 		</nav>
@@ -44,6 +45,7 @@ $theme_uri = get_template_directory_uri();
 				<a href="<?php echo esc_url( home_url( '/about/' ) ); ?>" class="footer__breadcrumb-link">障害年金について</a><span class="footer__breadcrumb-sep">|</span>
 				<a href="<?php echo esc_url( home_url( '/support/' ) ); ?>" class="footer__breadcrumb-link">サポート内容</a><span class="footer__breadcrumb-sep">|</span>
 				<a href="<?php echo esc_url( home_url( '/charge/' ) ); ?>" class="footer__breadcrumb-link">料金・費用</a><span class="footer__breadcrumb-sep">|</span>
+				<a href="<?php echo esc_url( get_post_type_archive_link( 'column' ) ); ?>" class="footer__breadcrumb-link">コラム</a><span class="footer__breadcrumb-sep">|</span>
 				<a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="footer__breadcrumb-link">お問い合わせ</a>
 			</p>
 			<p class="footer__copyright">Copyright(C)<?php echo esc_html( date( 'Y' ) ); ?> 社会保険労務士川村事務所 All Rights Reserved.</p>
