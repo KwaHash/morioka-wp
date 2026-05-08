@@ -1,0 +1,58 @@
+@use '../mixin/breakpoint' as *;
+
+html {
+  margin: 0;
+  scroll-behavior: smooth;
+
+  @include media('pc') {
+    font-size: clamp(11px, 0.76923vw, 13px);
+  }
+
+  @include media('sp') {
+    font-size: 1.5625vw;
+  }
+}
+
+body {
+  position: relative;
+  font-weight: normal;
+  background-color: #EBE1D2;
+  font-size: 1.8rem;
+  margin: 0;
+  line-height: 1.5;
+  word-break: break-all;
+  padding: 0;
+  font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    YuGothic,
+    Verdana,
+    Meiryo,
+    "M+ 1p",
+    sans-serif;
+}
+
+.container {
+  max-width: 80rem;
+  padding: 0 3rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media('sp') {
+    padding: 0 2rem;
+  }
+}
+
+._pc {
+  display: block;
+  @include media('sp') {
+    display: none;
+  }
+}
+
+._sp {
+  display: none;
+  @include media('sp') {
+    display: block;
+  }
+}
