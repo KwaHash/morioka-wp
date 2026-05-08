@@ -1,0 +1,324 @@
+@use '../mixin/breakpoint' as *;
+
+$charge-heading-clr: #8B6950;
+$charge-content-bg: #fff;
+$charge-content-text: #8B6950;
+
+.charge__page {
+  background-image: url('/assets/img/charge-bg.webp');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  object-fit: contain;
+}
+
+.charge__title-section {
+  padding: 4rem 2rem 2rem;
+}
+
+.charge__heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: $charge-heading-clr;
+  text-align: center;
+
+  @include media('sp') {
+    font-size: 4rem;
+  }
+
+  &--deco {
+    display: block;
+  }
+}
+
+.charge__heading-underline {
+  width: 100%;
+  max-width: 20rem;
+  margin: 0 auto;
+
+  @include media('sp') {
+    max-width: 25rem;
+  }
+}
+
+.charge__heading-underline-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.charge__heading-underline-path {
+  stroke: $charge-heading-clr;
+  stroke-width: 3;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  vector-effect: non-scaling-stroke;
+
+  @include media('sp') {
+    stroke-width: 2;
+  }
+}
+
+.charge__content-section {
+  max-width: 105rem;
+  margin: 0 auto;
+  padding: 0 2.8rem 12rem;
+}
+
+.charge__content {
+  background-color: $charge-content-bg;
+  margin: 0 auto;
+  color: $charge-content-text;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  padding: 4rem 6rem;
+
+  @include media('sp') {
+    font-size: 2.4rem;
+    padding: 4rem;
+  }
+}
+
+.charge__text {
+  margin: 0 0 0.5rem;
+  line-height: 1.6;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.charge__price {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: $charge-heading-clr;
+  margin: 0.5rem 0 1rem;
+
+  @include media('sp') {
+    font-size: 2.4rem;
+  }
+}
+
+.charge__table-wrap {
+  margin: 1rem 0 1.5rem;
+  overflow-x: auto;
+}
+
+.charge__table {
+  width: 100%;
+  min-width: 28rem;
+  border-collapse: collapse;
+  font-size: 1.5rem;
+  line-height: 1.6;
+
+  @include media('sp') {
+    font-size: 1.8rem;
+  }
+
+  th,
+  td {
+    padding: 1rem 0;
+    border: 1px solid rgba(139, 105, 80, 0.3);
+    text-align: center;
+    vertical-align: top;
+  }
+
+  thead th {
+    background-color: rgba(139, 105, 80, 0.12);
+    font-weight: 700;
+    color: $charge-heading-clr;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: rgba(139, 105, 80, 0.04);
+  }
+
+  &.charge__table--highlight {
+    thead th {
+      background-color: rgba(139, 105, 80, 0.18);
+    }
+
+    .charge__table-price {
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: $charge-heading-clr;
+
+      @include media('sp') {
+        font-size: 1.9rem;
+      }
+    }
+  }
+}
+
+.charge__table-price {
+  font-weight: 600;
+  color: $charge-heading-clr;
+  white-space: nowrap;
+}
+
+.charge__block {
+  margin: 1.5rem 0;
+
+  &--with-figure {
+    @include media('pc') {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    @include media('sp') {
+      .charge__figure {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}
+
+.charge__block-text {
+  min-width: 0;
+}
+
+.charge__figure {
+  margin: 0;
+
+  @include media('pc') {
+    max-width: 36rem;
+  }
+}
+
+.charge__img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.charge__list {
+  margin: 1rem 0 1.5rem;
+  padding-left: 2rem;
+  list-style: disc;
+  line-height: 1.6;
+
+  @include media('pc') {
+    padding-left: 2.4rem;
+  }
+}
+
+.charge__list-item {
+  margin-bottom: 0.4rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.charge__block {
+  margin-bottom: 2.5rem;
+}
+
+.charge__subheading {
+  margin: 1.5rem 0 0.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.4;
+  color: $charge-heading-clr;
+
+  @include media('sp') {
+    font-size: 3rem;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &--level2 {
+    margin-top: 1.6rem;
+    font-size: 1.6rem;
+
+    @include media('pc') {
+      font-size: 1.75rem;
+      margin-top: 1.8rem;
+    }
+  }
+}
+
+.charge__note {
+  font-size: 0.95em;
+  color: #555;
+
+  .charge__text & {
+    display: inline;
+  }
+}
+
+p.charge__note {
+  display: block;
+  margin: 0.5rem 0 1rem;
+  padding-left: 0;
+  font-size: 1.4rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+// CTA（お問い合わせ導線の統一）
+.charge__cta {
+  margin-top: 3rem;
+  padding: 2.5rem 0 3rem;
+  border-top: 1px solid rgba(139, 105, 80, 0.2);
+  text-align: center;
+}
+
+.charge__cta-lead {
+  margin: 0 0 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: $charge-heading-clr;
+
+  @include media('sp') {
+    font-size: 1.8rem;
+  }
+}
+
+.charge__cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.charge__cta-btn {
+  display: inline-block;
+  padding: 1rem 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  @include media('sp') {
+    font-size: 1.5rem;
+    padding: 1.2rem 1.8rem;
+    min-width: 80%;
+  }
+
+  &--line {
+    background-color: #06c755;
+    border: 2px solid #06c755;
+  }
+
+  &--mail {
+    background-color: $charge-heading-clr;
+    border: 2px solid $charge-heading-clr;
+  }
+
+  &--phone {
+    background-color: #327C49;
+    border: 2px solid #327C49;
+  }
+}
