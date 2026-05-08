@@ -50,6 +50,7 @@ $theme_uri = get_template_directory_uri();
 				<li class="header__nav-item"><a href="<?php echo esc_url( home_url( '/about/' ) ); ?>" class="header__nav-link">障害年金について</a></li>
 				<li class="header__nav-item"><a href="<?php echo esc_url( home_url( '/support/' ) ); ?>" class="header__nav-link">サポート内容</a></li>
 				<li class="header__nav-item"><a href="<?php echo esc_url( home_url( '/charge/' ) ); ?>" class="header__nav-link">料金・費用</a></li>
+				<li class="header__nav-item"><a href="<?php echo esc_url( get_post_type_archive_link( 'column' ) ); ?>" class="header__nav-link">コラム</a></li>
 				<li class="header__nav-item"><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="header__nav-link">お問い合わせ</a></li>
 			</ul>
 		</nav>
@@ -69,6 +70,7 @@ $theme_uri = get_template_directory_uri();
 			<li class="mnav__item"><a href="<?php echo esc_url( home_url( '/about/' ) ); ?>" class="mnav__link">障害年金について</a></li>
 			<li class="mnav__item"><a href="<?php echo esc_url( home_url( '/support/' ) ); ?>" class="mnav__link">サポート内容</a></li>
 			<li class="mnav__item"><a href="<?php echo esc_url( home_url( '/charge/' ) ); ?>" class="mnav__link">料金・費用</a></li>
+			<li class="mnav__item"><a href="<?php echo esc_url( get_post_type_archive_link( 'column' ) ); ?>" class="mnav__link">コラム</a></li>
 			<li class="mnav__item"><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="mnav__link">お問い合わせ</a></li>
 		</ul>
 	</div>
