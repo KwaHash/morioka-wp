@@ -11,15 +11,15 @@ $theme_uri = get_template_directory_uri();
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<meta name="keywords" content="障害年金,盛岡,岩手県,社会保険労務士,川村事務所,障害年金相談,申請サポート, Morioka, disability pension" />
-	<meta name="description" content="岩手県盛岡市の障害年金相談は社会保険労務士川村事務所へ。申請から受給まで、ずっとそばに。安心して頼れる障害年金サポートで、お一人おひとりの状況に合わせてサポートします。" />
+	<meta name="keywords" content="障害年金,盛岡,岩手県,社会保険労務士,障害年金相談,障害年金申請,障害年金請求,初診日,診断書,病歴・就労状況等申立書,受診状況等証明書,障害基礎年金,障害厚生年金,遡及請求" />
+	<meta name="description" content="岩手県盛岡市の社会保険労務士川村事務所では、障害年金の相談・請求サポートを行っています。初診日や通院歴の整理、診断書取得時の確認、病歴・就労状況等申立書の作成、年金事務所への提出まで丁寧に対応します。" />
 	<link rel="icon" href="<?php echo esc_url( $theme_uri ); ?>/assets/img/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="<?php echo esc_url( $theme_uri ); ?>/assets/img/favicon.ico" type="image/x-icon" />
 	<meta property="og:title" content="社会保険労務士川村事務所｜岩手県盛岡市の障害年金相談" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="<?php echo esc_url( home_url( '/' ) ); ?>" />
 	<meta property="og:site_name" content="社会保険労務士川村事務所" />
-	<meta property="og:description" content="岩手県盛岡市の障害年金相談。申請から受給まで、ずっとそばに。安心して頼れる障害年金サポート。" />
+	<meta property="og:description" content="岩手県盛岡市の社会保険労務士川村事務所では、障害年金の相談・請求サポートを行っています。初診日や通院歴の整理、診断書取得時の確認、病歴・就労状況等申立書の作成、年金事務所への提出まで丁寧に対応します。" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Yantramanav:wght@100;300;400;500;700;900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
