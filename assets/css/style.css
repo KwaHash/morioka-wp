@@ -906,7 +906,7 @@ fieldset {
 }
 
 .home {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .home__hero {
