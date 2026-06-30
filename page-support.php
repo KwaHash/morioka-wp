@@ -120,6 +120,13 @@ $support_bg_url = esc_url( $theme_uri . '/assets/img/support-bg.webp' );
 							<img class="support__gallery-img" src="<?php echo esc_url( $theme_uri ); ?>/assets/img/support-room-03.webp" alt="事務所外観" width="320" height="240" loading="lazy" />
 						</div>
 						<p class="support__text support__text--center">事務所は、盛岡南インター入口交差点付近にあります。</p>
+						<div class="support__profile-box wow fadeIn" data-wow-duration="0.8s">
+							<p class="support__profile-label">担当社会保険労務士</p>
+							<p class="support__profile-name">社会保険労務士　川村美礼</p>
+							<p class="support__profile-text">岩手県盛岡市で、障害年金の相談・請求サポートを行っています。<br />
+								年金事務所での相談業務にも継続して従事し、制度の仕組みと実際の手続きの流れを踏まえながら、丁寧にサポートします。
+							</p>
+						</div>
 						<div class="support__parking-box">
 							<div class="support__parking-wrap">
 								<img src="<?php echo esc_url( $theme_uri ); ?>/assets/img/parking.png" alt="" loading="lazy" class="support__parking-icon" width="48" height="48" />
