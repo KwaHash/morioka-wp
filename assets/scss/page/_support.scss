@@ -378,6 +378,53 @@ $support-parking-bg: #e8f0e8;
   }
 }
 
+.support__profile-box {
+  width: 70%;
+  margin: 1.5rem auto 0;
+  padding: 1.5rem 2rem;
+  background-color: #FBFAF6;
+  border: 1px solid #DDD6C5;
+  border-radius: 4px;
+
+  @include media('sp') {
+    width: 100%;
+  }
+}
+
+.support__profile-label {
+  margin: 0 0 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: $support-content-text;
+
+  @include media('sp') {
+    font-size: 1.6rem;
+  }
+}
+
+.support__profile-name {
+  margin: 0 0 0.6rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: $support-content-text;
+
+  @include media('sp') {
+    font-size: 1.9rem;
+  }
+}
+
+.support__profile-text {
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: $support-content-text;
+
+  @include media('sp') {
+    font-size: 1.7rem;
+  }
+}
+
 .support__cases-section {
   padding-bottom: 8rem;
 
