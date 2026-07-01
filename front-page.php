@@ -88,8 +88,7 @@ $home_bg_url = esc_url( $theme_uri . '/assets/img/home-bg.webp' );
 							<div class="home__block-box">
 								<p class="about__requirement-title"><span class="about__requirement-num">①</span>年金制度を理解したうえでのサポート</p>
 								<p class="home__list-item">
-									年金事務所での実務経験を踏まえ、<br />
-									制度の仕組みだけでなく、実際の手続きの流れを意識しながら進めています。<br />
+									年金事務所での相談業務経験を活かし、制度の仕組みと実際の手続きの流れを意識しながら進めています。<br />
 									「何を整理すべきか」「どこが判断のポイントになるか」を確認しつつ、無理のない形で申請を進めます。<br />
 								</p>
 								<p class="about__requirement-title"><span class="about__requirement-num">②</span>盛岡を中心とした、相談しやすい体制</p>
